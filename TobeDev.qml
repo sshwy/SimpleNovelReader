@@ -6,10 +6,15 @@ Window{
     visible: false
     width: 400
     height: 100
-    Label{
-        text: qsTr("To be Dev...")
-        font.pixelSize: 70
-        font.bold: true
-        anchors.centerIn: parent
+    Rectangle{
+        width: parent.width
+        height: parent.height
+        color: "#DCDCDC"
+        Label{
+            text: qsTr("To be Dev...")
+            font.pixelSize: 70
+            font.bold: true
+            anchors.centerIn: parent
+        }
     }
 }

@@ -1,3 +1,40 @@
+/***
+# SimpleNovelReader
+
+## *v0.1*
+
+设计了开始界面StartWindow，设计了球形按钮
+
+## 简介
+
+利用网络爬虫，自动抓取小说，在本地阅读，内嵌阅读器
+
+## 工程计划
+
+语言：`Qt5` `Python`
+
+基本架构：Qt5前端GUI，Python用于后端网络爬虫
+
+平台：`Windows` `Linux`
+
+## 功能预设
+
+* [ ] 爬取网站上的文本小说，进行文件的整合；不同的网站设计不同的爬虫架构
+* [ ] 添加源网站，判断爬虫架构的可行性
+* [ ] 内嵌阅读器，支持本地阅读
+* [ ] 爬取连载小说
+* [ ] 爬取带图片的小说，排除广告
+* [ ] 自动识别小说章节，优化阅读体验
+* [ ] 云同步
+
+## 开发人员
+
+`sscyc `团队
+
+## 代码体系设计
+
+见别文
+***/
 import QtQuick 2.9
 import QtQuick.Window 2.2
 import QtQuick.Dialogs 1.2
@@ -8,7 +45,7 @@ ApplicationWindow {//主窗口
     visible: true
     width: 1080
     height: 720
-    title: qsTr("Simple Novel Reader 0.0")
+    title: qsTr("Simple Novel Reader 0.1")
     color: "#DCDCDC"
     StartWindow{
         visible: true

@@ -28,9 +28,27 @@ Rectangle{
             }
             MouseArea{
                 anchors.fill: parent
+                hoverEnabled: true
                 onClicked: {
                     console.log("PushButton: [Read]");
-                    tobeDev.show()
+                    tobeDev.show();
+                }
+                onEntered: {
+                    console.log("onEntered: [Read]");
+                    parent.color="lightcoral"
+                }
+                onExited: {
+                    console.log("onExited: [Read]");
+                    parent.color="red"
+                }
+
+                onPressed: {
+                    console.log("onPressed: [Read]");
+                    parent.color="firebrick"
+                }
+                onReleased: {
+                    parent.color="red"
+                    console.log("onReleased: [Read]");
                 }
             }
         }
@@ -45,9 +63,27 @@ Rectangle{
             }
             MouseArea{
                 anchors.fill: parent
+                hoverEnabled: true
                 onClicked: {
                     console.log("PushButton: [Search]");
-                    tobeDev.show()
+                    tobeDev.show();
+                }
+                onEntered: {
+                    console.log("onEntered: [Search]");
+                    parent.color="skyblue"
+                }
+                onExited: {
+                    console.log("onExited: [Search]");
+                    parent.color="blue"
+                }
+
+                onPressed: {
+                    console.log("onPressed: [Search]");
+                    parent.color="navy"
+                }
+                onReleased: {
+                    parent.color="blue"
+                    console.log("onReleased: [Search]");
                 }
             }
         }
