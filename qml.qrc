@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>StartWindow.qml</file>
+        <file>image/startwindow_background.jpg</file>
+        <file>Circle.qml</file>
+        <file>TobeDev.qml</file>
     </qresource>
 </RCC>

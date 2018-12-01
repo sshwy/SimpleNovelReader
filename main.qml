@@ -10,14 +10,19 @@ ApplicationWindow {//主窗口
     height: 720
     title: qsTr("Simple Novel Reader 0.0")
     color: "#DCDCDC"
-    Row{//顶部状态栏
+    StartWindow{
+        visible: true
+    }
+
+
+    /*Row{//顶部状态栏
         id: top_status
         anchors.top: parent.top
         anchors.topMargin: 8
         anchors.left: parent.left
         anchors.leftMargin: 8
         spacing: 2
-        Rectangle{
+        Rectangle{//退出按钮
             width: 48
             height: 20
             Text{
@@ -29,7 +34,7 @@ ApplicationWindow {//主窗口
                 onClicked: Qt.quit();
             }
         }
-        Rectangle{
+        Rectangle{//帮助弹窗
             width: 48
             height: 20
             Text{
@@ -61,7 +66,7 @@ ApplicationWindow {//主窗口
             text: qsTr("side_bar")
         }
     }
-    Rectangle{
+    Rectangle{//正文部分
         id: field_area
         width: parent.width-side_bar.width-24
         height: side_bar.height
@@ -73,5 +78,5 @@ ApplicationWindow {//主窗口
             anchors.centerIn: parent
             text: qsTr("field_area")
         }
-    }
+    }*/
 }
